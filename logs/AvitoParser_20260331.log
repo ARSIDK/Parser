@@ -1,0 +1,15 @@
+2026-03-31 17:47:18 - AvitoParser - WARNING - Попытка 1 не удалась: 404 Client Error: Not Found for url: https://www.avito.ru/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/muzykalnye_instrumenty?q=%D1%81%D0%B8%D0%BD%D1%82%D0%B5%D0%B7%D0%B0%D1%82%D0%BE%D1%80%20
+2026-03-31 17:47:20 - AvitoParser - WARNING - Попытка 2 не удалась: 404 Client Error: Not Found for url: https://www.avito.ru/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/muzykalnye_instrumenty?q=%D1%81%D0%B8%D0%BD%D1%82%D0%B5%D0%B7%D0%B0%D1%82%D0%BE%D1%80%20
+2026-03-31 17:47:23 - AvitoParser - WARNING - Попытка 3 не удалась: 404 Client Error: Not Found for url: https://www.avito.ru/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/muzykalnye_instrumenty?q=%D1%81%D0%B8%D0%BD%D1%82%D0%B5%D0%B7%D0%B0%D1%82%D0%BE%D1%80%20
+2026-03-31 17:47:23 - AvitoParser - ERROR - Ошибка парсинга Avito: 404 Client Error: Not Found for url: https://www.avito.ru/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/muzykalnye_instrumenty?q=%D1%81%D0%B8%D0%BD%D1%82%D0%B5%D0%B7%D0%B0%D1%82%D0%BE%D1%80%20
+2026-03-31 17:47:23 - AvitoParser - INFO - Найдено 0 объявлений
+2026-03-31 17:47:36 - AvitoParser - WARNING - Попытка 1 не удалась: 404 Client Error: Not Found for url: https://www.avito.ru/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/muzykalnye_instrumenty?q=%D0%B1%D0%B0%D1%80%D0%B0%D0%B1%D0%B0%D0%BD
+2026-03-31 17:47:36 - AvitoParser - WARNING - Попытка 1 не удалась: 404 Client Error: Not Found for url: https://www.avito.ru/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/muzykalnye_instrumenty?q=%D0%B1%D0%B0%D1%80%D0%B0%D0%B1%D0%B0%D0%BD
+2026-03-31 17:47:38 - AvitoParser - WARNING - Попытка 2 не удалась: 404 Client Error: Not Found for url: https://www.avito.ru/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/muzykalnye_instrumenty?q=%D0%B1%D0%B0%D1%80%D0%B0%D0%B1%D0%B0%D0%BD
+2026-03-31 17:47:38 - AvitoParser - WARNING - Попытка 2 не удалась: 404 Client Error: Not Found for url: https://www.avito.ru/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/muzykalnye_instrumenty?q=%D0%B1%D0%B0%D1%80%D0%B0%D0%B1%D0%B0%D0%BD
+2026-03-31 17:47:40 - AvitoParser - WARNING - Попытка 3 не удалась: 404 Client Error: Not Found for url: https://www.avito.ru/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/muzykalnye_instrumenty?q=%D0%B1%D0%B0%D1%80%D0%B0%D0%B1%D0%B0%D0%BD
+2026-03-31 17:47:40 - AvitoParser - WARNING - Попытка 3 не удалась: 404 Client Error: Not Found for url: https://www.avito.ru/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/muzykalnye_instrumenty?q=%D0%B1%D0%B0%D1%80%D0%B0%D0%B1%D0%B0%D0%BD
+2026-03-31 17:47:40 - AvitoParser - ERROR - Ошибка парсинга Avito: 404 Client Error: Not Found for url: https://www.avito.ru/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/muzykalnye_instrumenty?q=%D0%B1%D0%B0%D1%80%D0%B0%D0%B1%D0%B0%D0%BD
+2026-03-31 17:47:40 - AvitoParser - ERROR - Ошибка парсинга Avito: 404 Client Error: Not Found for url: https://www.avito.ru/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/muzykalnye_instrumenty?q=%D0%B1%D0%B0%D1%80%D0%B0%D0%B1%D0%B0%D0%BD
+2026-03-31 17:47:40 - AvitoParser - INFO - Найдено 0 объявлений
+2026-03-31 17:47:40 - AvitoParser - INFO - Найдено 0 объявлений
