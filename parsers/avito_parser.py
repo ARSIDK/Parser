@@ -1,7 +1,3 @@
-"""
-Парсер Avito.ru для поиска музыкальных инструментов
-"""
-
 import re
 import time
 import random
@@ -10,7 +6,6 @@ from bs4 import BeautifulSoup
 import requests
 from fake_useragent import UserAgent
 
-# Добавляем путь для импортов
 import sys
 import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -18,7 +13,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 try:
     from parsers.base_parser import BaseParser
 except ImportError:
-    # Создаем базовый класс если не найден
+    
     class BaseParser:
         def __init__(self):
             self.logger = print
@@ -69,7 +64,6 @@ class AvitoParser(BaseParser):
         
         results = []
         
-        # Формируем URL для поиска
         search_url = f"{self.base_url}/{region}/muzykalnye_instrumenty?q={query}"
         
         print(f"Парсинг Avito: {search_url}")
@@ -82,16 +76,13 @@ class AvitoParser(BaseParser):
             
             soup = BeautifulSoup(response.text, 'html.parser')
             
-            # Ищем объявления
             items = soup.find_all('div', {'data-marker': 'item'})
             
             if not items:
-                # Альтернативный поиск
                 items = soup.find_all('div', class_='iva-item-content')
             
             print(f"Найдено {len(items)} объявлений")
             
-            # Ограничиваем количество
             items = items[:limit]
             
             for item in items:
@@ -131,14 +122,13 @@ class AvitoParser(BaseParser):
                 'city': ''
             }
             
-            # Поиск названия
             title_elem = item.find('h3', {'data-marker': 'item-title'})
             if not title_elem:
                 title_elem = item.find('a', class_='iva-item-title')
             
             if title_elem:
                 data['name'] = title_elem.text.strip()
-                # Получаем ссылку
+
                 link = title_elem.get('href')
                 if link:
                     if link.startswith('/'):
@@ -146,7 +136,6 @@ class AvitoParser(BaseParser):
                     else:
                         data['website'] = link
             
-            # Поиск цены
             price_elem = item.find('span', {'data-marker': 'item-price'})
             if not price_elem:
                 price_elem = item.find('span', class_='price')
@@ -154,15 +143,13 @@ class AvitoParser(BaseParser):
             if price_elem:
                 data['price'] = price_elem.text.strip()
             
-            # Поиск адреса
             address_elem = item.find('div', {'data-marker': 'item-address'})
             if not address_elem:
                 address_elem = item.find('span', class_='geo')
             
             if address_elem:
                 data['address'] = address_elem.text.strip()
-            
-            # Определяем категорию
+
             data['category'] = self._determine_category(data['name'] or query)
             
             return data

@@ -1,7 +1,3 @@
-"""
-Парсер VK для поиска групп и сообществ
-"""
-
 import time
 import random
 from typing import List, Dict, Any
@@ -12,7 +8,6 @@ class VKParser:
     
     def __init__(self):
         self.api_url = "https://api.vk.com/method/"
-        # Для учебного проекта используем публичный API без токена (ограниченные возможности)
         self.api_version = "5.131"
         print("VKParser инициализирован")
     
@@ -30,11 +25,7 @@ class VKParser:
         
         results = []
         
-        # Для учебного проекта возвращаем тестовые данные, так как VK API требует токен
-        # В реальном проекте нужно добавить access_token
         print(f"Поиск групп ВК по запросу: {query}")
-        
-        # Создаем тестовые данные на основе запроса
         test_groups = self._generate_test_data(query, limit)
         
         for group in test_groups:
@@ -51,7 +42,6 @@ class VKParser:
         
         test_data = []
         
-        # Базовые названия групп
         group_templates = [
             f"{query} - музыкальный магазин",
             f"{query} для музыкантов",
@@ -65,7 +55,6 @@ class VKParser:
             f"Группа любителей {query}"
         ]
         
-        # Ограничиваем количество
         templates = group_templates[:limit]
         
         for i, name in enumerate(templates):
